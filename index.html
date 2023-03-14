@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Soft</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="top-header" id="top-header">
+        <!-- header head -->
+        <div class="header_head hide-on-mobile hide-on-tablet">
+            <div class="container container-full">
+                <div class="header_info d-flex justify-content-between">
+                    <ul class="header_info-list d-flex list-unstyled">
+                        <li>
+                            <a href="mailto:mail@example.com">
+                                <i class="fas fa-envelope"></i>
+                                <span>mail@example.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:18887771234">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>+1-888-777-1234</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header_info-list d-flex list-unstyled">
+                        <li>
+                            <a class="header-link-icon" href="https://www.facebook.com">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="header-link-icon" href="https://www.instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="header-link-icon" href="https://www.linkedin.com">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="header-link-icon" href="https://twitter.com">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-tty"></i>
+                                <span class="call-back-line">Call back</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header nav -->
+        <nav class="header-navbar navbar navbar-expand-lg navbar-light">
+            <div class="container container-full">
+                <a class="header_logo" href="#">
+                    <img src="./public/images/cropped-logo-1-2.png" alt="cropped-logo" class="img-fluid">
+                </a>
+                <div class="header_nav-input input-group hide-on-mobile">
+                    <input type="text" name="search" class="form-control" placeholder="Search">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <div class="header_nav-times pt-1 hide-on-mobile">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="header_nav-search pt-1">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header_nav-ellipsis hide-on-desktop pt-1">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="header_nav-info" onclick="event.stopPropagation()">
+                        <ul class="header_nav-info-list d-flex list-unstyled">
+                            <li>
+                                <a href="mailto:mail@example.com">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>mail@example.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:18887771234">
+                                    <i class="fas fa-phone-volume"></i>
+                                    <span>+1-888-777-1234</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header_nav-info-list d-flex list-unstyled">
+                            <li>
+                                <a class="header-link-icon" href="https://www.facebook.com">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="header-link-icon" href="https://www.instagram.com">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="header-link-icon" href="https://www.linkedin.com">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a class="header-link-icon" href="https://twitter.com">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="order">
+                                <a href="#">
+                                    <i class="fas fa-tty"></i>
+                                    <span class="call-back-line">Call back</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item nav-item--active">
+                            <a class="nav-link active" aria-current="page" href="#">Home </a>
+                            <i class="fas fa-chevron-down hide-on-mobile show-on-desktop"></i>
+                            <i class="fas fa-chevron-down nav-item-icon hide-on-desktop"></i>
+                            <ul class="header-navbar-list">
+                                <li>
+                                    <a title="Home 1" href="#">Home 1</a>
+                                </li>
+                                <li>
+                                    <a title="Home 2" href="#">Home 2</a>
+                                </li>
+                                <li>
+                                    <a title="Home 3" href="#">Home 3</a>
+                                </li>
+                                <li>
+                                    <a title="Home 4" href="#">Home 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a title="About us" class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Services" class="nav-link" href="#">Services </a>
+                            <i class="fas fa-chevron-down hide-on-mobile show-on-desktop"></i>
+                            <i class="fas fa-chevron-down nav-item-icon hide-on-desktop"></i>
+                            <ul class="header-navbar-list">
+                                <li>
+                                    <a title="Services 1" href="#">Services 1</a>
+                                </li>
+                                <li>
+                                    <a title="Services 2" href="#">Services 2</a>
+                                </li>
+                                <li>
+                                    <a title="Services 3" href="#">Services 3</a>
+                                </li>
+                                <li>
+                                    <a title="Services 4" href="#">Services 4</a>
+                                </li>
+                                <li>
+                                    <a title="Single service" href="#">Single service</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a title="Page" class="nav-link" href="#">Page </a>
+                            <i class="fas fa-chevron-down hide-on-mobile show-on-desktop"></i>
+                            <i class="fas fa-chevron-down nav-item-icon hide-on-desktop"></i>
+                            <ul class="header-navbar-list">
+                                <li>
+                                    <a title="Project" href="#">Project</a>
+                                </li>
+                                <li>
+                                    <a title="Pricing" href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a title="Our team" href="#">Our team</a>
+                                </li>
+                                <li>
+                                    <a title="Our team 2" href="#">Our team 2</a>
+                                </li>
+                                <li>
+                                    <a title="Brands" href="#">Brands</a>
+                                </li>
+                                <li>
+                                    <a title="Testimonials" href="#">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a title="FAQ" href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a title="Coming soon" href="#">Coming soon</a>
+                                </li>
+                                <li>
+                                    <a title="404" href="#">404</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Blog" class="nav-link" href="#">Blog </a>
+                            <i class="fas fa-chevron-down hide-on-mobile show-on-desktop"></i>
+                            <i class="fas fa-chevron-down nav-item-icon hide-on-desktop"></i>
+                            <ul class="header-navbar-list">
+                                <li>
+                                    <a title="List Blog" href="#">List Blog</a>
+                                </li>
+                                <li>
+                                    <a title="Grid Blog" href="#">Grid Blog</a>
+                                </li>
+                                <li>
+                                    <a title="Grid Blog 2" href="#">Grid Blog 2</a>
+                                </li>
+                                <li>
+                                    <a title="Grid blog sidebar" href="#">Grid blog sidebar</a>
+                                </li>
+                                <li>
+                                    <a title="Grid blog right sidebar" href="#">Grid blog right sidebar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Gallery" class="nav-link" href="#">Gallery </a>
+                            <i class="fas fa-chevron-down hide-on-mobile show-on-desktop"></i>
+                            <i class="fas fa-chevron-down nav-item-icon hide-on-desktop"></i>
+                            <ul class="header-navbar-list">
+                                <li>
+                                    <a title="Grid Padding Gallery" href="#">Grid Padding Gallery</a>
+                                </li>
+                                <li>
+                                    <a title="Grid No Padding Gallery" href="#">Grid No Padding Gallery</a>
+                                </li>
+                                <li>
+                                    <a title="Grid Masonry" href="#">Grid Masonry</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Contact Us" class="nav-link" href="#">Contact Us </a>
+                            <i class="fas fa-chevron-down hide-on-mobile show-on-desktop"></i>
+                                <i class=" fas fa-chevron-down nav-item-icon hide-on-desktop"></i>
+                            <ul class="header-navbar-list">
+                                <li>
+                                    <a title="Contact Us 1" href="#">Contact Us 1</a>
+                                </li>
+                                <li>
+                                    <a title="Contact Us 2" href="#">Contact Us 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- header carousel -->
+        <div class="row g-0">
+            <div class="col-12 col-md-12">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="carousel-caption d-md-block text-start">
+                                <h1>IT Solutions for Your Business</h1>
+                                <p>On this template you will be able to create a site for your business. The
+                                    template has many differents blocks from which you can create your own
+                                    unique
+                                    site</p>
+                                <button type="button" class="btn btn-primary btn-md">About us <i
+                                        class="fas fa-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-md">Contact us <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="carousel-caption d-md-block text-start">
+                                <h1>IT Solutions for Your Business</h1>
+                                <p>On this template you will be able to create a site for your business. The
+                                    template has many differents blocks from which you can create your own
+                                    unique
+                                    site</p>
+                                <button type="button" class="btn btn-primary btn-md">About us <i
+                                        class="fas fa-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-md">Contact us <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-md-block text-start">
+                                <h1>IT Solutions for Your Business</h1>
+                                <p>On this template you will be able to create a site for your business. The
+                                    template has many differents blocks from which you can create your own
+                                    unique
+                                    site</p>
+                                <button type="button" class="btn btn-primary btn-md">About us <i
+                                        class="fas fa-arrow-right"></i></button>
+                                <button type="button" class="btn btn-outline-dark btn-md">Contact us <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
+    <div class="content">
+        <div class="content-product">
+            <span class="content-product-head">AREAS WHAT WE SERV</span>
+            <h2 class="content-product-title">Our Services</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#"
+                        class="product-item product-item-hv product-item-pad product-item-mar product-item-line">
+                        <div class="product-item-lg">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h4 class="product-item-heading">Comporate Solution</h4>
+                        <p class="product-item-desc">Contrary to popular belief, Lorem Ipsum is not simply ramdom
+                            text.</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#"
+                        class="product-item product-item-hv product-item-pad product-item-mar product-item-line">
+                        <div class="product-item-lg">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h4 class="product-item-heading">Call Center Solutions</h4>
+                        <p class="product-item-desc">Contrary to popular belief, Lorem Ipsum is not simply ramdom
+                            text.</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#"
+                        class="product-item product-item-hv product-item-pad product-item-mar product-item-line">
+                        <div class="product-item-lg">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h4 class="product-item-heading">Clound Development</h4>
+                        <p class="product-item-desc">Contrary to popular belief, Lorem Ipsum is not simply ramdom
+                            text.</p>
+                    </a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-md">See All Services<i
+                    class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="content-product content-product-ground">
+            <span class="content-product-head">SOME REASONS</span>
+            <h2 class="content-product-title">Why Choose Us</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-pad product-item-mar product-item-flex">
+                        <div class="product-item-text">
+                            01
+                        </div>
+                        <div class="product-item-bl">
+                            <h4 class="product-item-heading">High Quality Hardware</h4>
+                            <p class="product-item-desc">We use top-notch hardware to develop the most efficient
+                                apps for our customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-pad product-item-mar product-item-flex">
+                        <div class="product-item-text">
+                            02
+                        </div>
+                        <div class="product-item-bl">
+                            <h4 class="product-item-heading">Dedicated 24\7 Support</h4>
+                            <p class="product-item-desc">You can rely on our 24/7 tech support that will gladly
+                                solve any app issue you may have.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-pad product-item-mar product-item-flex">
+                        <div class="product-item-text">
+                            03
+                        </div>
+                        <div class="product-item-bl">
+                            <h4 class="product-item-heading">30-Day Money-back Guarantee</h4>
+                            <p class="product-item-desc">If you are not satisfied with our apps, we will return your
+                                money in the first 30 days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-pad product-item-mar product-item-flex">
+                        <div class="product-item-text">
+                            04
+                        </div>
+                        <div class="product-item-bl">
+                            <h4 class="product-item-heading">Agile and Fast Working Style</h4>
+                            <p class="product-item-desc">This type of approach to our work helps our specialists to
+                                quickly develop better apps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-pad product-item-mar product-item-flex">
+                        <div class="product-item-text">
+                            05
+                        </div>
+                        <div class="product-item-bl">
+                            <h4 class="product-item-heading">Some Apps are Free</h4>
+                            <p class="product-item-desc">We also develop free apps that can be downloaded online
+                                without any payments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-pad product-item-mar product-item-flex">
+                        <div class="product-item-text">
+                            06
+                        </div>
+                        <div class="product-item-bl">
+                            <h4 class="product-item-heading">High Level of Usability</h4>
+                            <p class="product-item-desc">All our products have high usability allowing users to
+                                easily operate the apps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-chart">
+            <div class="cumulative-chart">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="cumlative-chart-item cumlative-chart-item-bef cumlative-chart-item-aft">
+                            <div class="cumlative-chart-box cumlative-chart-box-size"></div>
+                            <div
+                                class="cumlative-chart-box cumlative-chart-box-size cumlative-chart-box-pos cumlative-chart-box-flex">
+                                <span class="cumlative-chart-box-num">10</span>
+                                <h5 class="cumlative-chart-box-text">Years Of Experience</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="cumlative-chart-item cumlative-chart-item-pl cumlative-chart-item-flex">
+                            <div
+                                class="cumlative-chart-box cumlative-chart-box-pad cumlative-chart-box-algn cumlative-chart-box-flex cumlative-chart-box-pb">
+                                <span class="cumlative-chart-box-num cumlative-chart-box-num-size">34</span>
+                                <h5 class="cumlative-chart-box-text">Аpps Developed</h5>
+                            </div>
+                            <div
+                                class="cumlative-chart-box cumlative-chart-box-pad cumlative-chart-box-algn cumlative-chart-box-flex cumlative-chart-box-pb">
+                                <span class="cumlative-chart-box-num cumlative-chart-box-num-size">40</span>
+                                <h5 class="cumlative-chart-box-text">Consultans</h5>
+                            </div>
+                            <div
+                                class="cumlative-chart-box cumlative-chart-box-pad cumlative-chart-box-algn cumlative-chart-box-flex">
+                                <span class="cumlative-chart-box-num cumlative-chart-box-num-size">160</span>
+                                <h5 class="cumlative-chart-box-text">Employers</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-product content-product-ground">
+            <span class="content-product-head">OUR WORKS</span>
+            <h2 class="content-product-title">Latest Projects</h2>
+            <ul class="content-product-list">
+                <li class="content-product-list-item content-product-list-item-active">
+                    ALL
+                </li>
+                <li class="content-product-list-item">
+                    CUSTOM SOFTWARE
+                </li>
+                <li class="content-product-list-item">
+                    MOBILE APPS
+                </li>
+                <li class="content-product-list-item">
+                    QA & TESTING
+                </li>
+                <li class="content-product-list-item">
+                    UX & DESIGN
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product-item product-item-hv-tranf">
+                            <img src="./public/images/project-img-1.jpg" alt="product-item"
+                                class="product-item-img img-fluid">
+                        </div>
+                        <div class="product-item product-item-pos">
+                            <div class="product-item-bl">
+                                <h4 class="product-item-heading">MPlanner</h4>
+                                <p class="product-item-desc">We work hard on every app to deliver top-notch features
+                                    with great UI that you won’t find anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product-item product-item-hv-tranf">
+                            <img src="./public/images/project-img-2.jpg" alt="product-item"
+                                class="product-item-img img-fluid">
+                        </div>
+                        <div class="product-item product-item-pos">
+                            <div class="product-item-bl">
+                                <h4 class="product-item-heading">WeatherNow</h4>
+                                <p class="product-item-desc">We work hard on every app to deliver top-notch features
+                                    with great UI that you won’t find anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product-item product-item-hv-tranf">
+                            <img src="./public/images/project-img-3.jpg" alt="product-item"
+                                class="product-item-img img-fluid">
+                        </div>
+                        <div class="product-item product-item-pos">
+                            <div class="product-item-bl">
+                                <h4 class="product-item-heading">Langer Messenger</h4>
+                                <p class="product-item-desc">We work hard on every app to deliver top-notch features
+                                    with great UI that you won’t find anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product-item product-item-hv-tranf">
+                            <img src="./public/images/project-img-4.jpg" alt="product-item"
+                                class="product-item-img img-fluid">
+                        </div>
+                        <div class="product-item product-item-pos">
+                            <div class="product-item-bl">
+                                <h4 class="product-item-heading">Mobile Finance</h4>
+                                <p class="product-item-desc">We work hard on every app to deliver top-notch features
+                                    with great UI that you won’t find anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product-item product-item-hv-tranf">
+                            <img src="./public/images/project-img-5.jpg" alt="product-item"
+                                class="product-item-img img-fluid">
+                        </div>
+                        <div class="product-item product-item-pos">
+                            <div class="product-item-bl">
+                                <h4 class="product-item-heading">RaptCash</h4>
+                                <p class="product-item-desc">We work hard on every app to deliver top-notch features
+                                    with great UI that you won’t find anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product-item product-item-hv-tranf">
+                            <img src="./public/images/project-img-6.jpg" alt="product-item"
+                                class="product-item-img img-fluid">
+                        </div>
+                        <div class="product-item product-item-pos">
+                            <div class="product-item-bl">
+                                <h4 class="product-item-heading">Search by photo</h4>
+                                <p class="product-item-desc">We work hard on every app to deliver top-notch features
+                                    with great UI that you won’t find anywhere else.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-md content-product-btn">See All Services<i
+                    class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="content-product">
+            <span class="content-product-head">WHO WE ARE</span>
+            <h2 class="content-product-title">Meet The Team</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img">
+                                <img src="./public/images/team-img-1.jpg" alt="team-img" class="img-fluid">
+                            </div>
+                            <ul class="product-item-list list-unstyled mb-0">
+                                <li>
+                                    <a class="header-link-icon" href="https://www.facebook.com">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.instagram.com">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.linkedin.com">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://twitter.com">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4 class="product-item-heading">Mary Lee</h4>
+                            <p class="product-item-desc">Software Developer</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img">
+                                <img src="./public/images/team-img-2.jpg" alt="team-img" class="img-fluid">
+                            </div>
+                            <ul class="product-item-list list-unstyled mb-0">
+                                <li>
+                                    <a class="header-link-icon" href="https://www.facebook.com">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.instagram.com">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.linkedin.com">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://twitter.com">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4 class="product-item-heading">Ryan Wilson</h4>
+                            <p class="product-item-desc">CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img">
+                                <img src="./public/images/team-img-3.jpg" alt="team-img" class="img-fluid">
+                            </div>
+                            <ul class="product-item-list list-unstyled mb-0">
+                                <li>
+                                    <a class="header-link-icon" href="https://www.facebook.com">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.instagram.com">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.linkedin.com">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://twitter.com">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4 class="product-item-heading">Sam Robinson</h4>
+                            <p class="product-item-desc">Senior Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img">
+                                <img src="./public/images/team-img-4.jpg" alt="team-img" class="img-fluid">
+                            </div>
+                            <ul class="product-item-list list-unstyled mb-0">
+                                <li>
+                                    <a class="header-link-icon" href="https://www.facebook.com">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.instagram.com">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.linkedin.com">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://twitter.com">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4 class="product-item-heading">Jill Peterson</h4>
+                            <p class="product-item-desc">Senior Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-product">
+            <span class="content-product-head">MORE INFO ABOUT</span>
+            <h2 class="content-product-title">Latest News</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-h product-item-bl-pad product-item-bl-bor">
+                            <div class="product-item-img product-item-img-flex">
+                                <img src="./public/images/auth-img-1.jpg" alt="team-img" class="img-fluid">
+                                <div class="product-item-img-text">
+                                    <h4>Catherine Williams</h4>
+                                    <p>Regular client</p>
+                                </div>
+                            </div>
+                            <p class="product-item-desc">PathSoft offers a high caliber of resources skilled in
+                                Microsoft Azure.NET, mobile and Quality Assurance. They became our true business
+                                partners over the past three years.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-h product-item-bl-pad product-item-bl-bor">
+                            <div class="product-item-img product-item-img-flex">
+                                <img src="./public/images/auth-img-2-1.jpg" alt="team-img" class="img-fluid">
+                                <div class="product-item-img-text">
+                                    <h4>Rupert Wood</h4>
+                                    <p>Regular client</p>
+                                </div>
+                            </div>
+                            <p class="product-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Suscipit consequuntur sequi eos beatae deleniti culpa cupiditate rerum. Similique,
+                                blanditiis rem perspiciatis fugiat voluptatem quas officiis ducimus reprehenderit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-h product-item-bl-pad product-item-bl-bor">
+                            <div class="product-item-img product-item-img-flex">
+                                <img src="./public/images/auth-img-3.jpg" alt="team-img" class="img-fluid">
+                                <div class="product-item-img-text">
+                                    <h4>Samantha Brown</h4>
+                                    <p>Regular client</p>
+                                </div>
+                            </div>
+                            <p class="product-item-desc">We sincerely hope that each and every user entering our
+                                website will find exactly. With advanced features of activating account and new
+                                login widgets, you will definitely have a great experience of using our web page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-md content-product-btn">See All Services<i
+                    class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="content-product">
+            <span class="content-product-head">WHO WE ARE</span>
+            <h2 class="content-product-title">Meet The Team</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img" style="height: 365px;">
+                                <img src="./public/images/news-img-3.jpg" alt="team-img" class="img-fluid"
+                                    style="object-fit: cover;">
+                                <span>18/02/2020</span>
+                            </div>
+                            <a href="#" class="product-item-heading">Hibernate Query Language</a>
+                            <p class="product-item-desc">Whenever I’m TA for a introductory CSS class where students
+                                learn [...]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img" style="height: 365px;">
+                                <img src="./public/images/blog-post-1024x683.jpg" alt="team-img" class="img-fluid"
+                                    style="object-fit: cover;">
+                                <span>18/02/2020</span>
+                            </div>
+                            <a href="#" class="product-item-heading">Key Considerations Of IPaaS</a>
+                            <p class="product-item-desc">Whenever I’m TA for a introductory CSS class where students
+                                learn [...]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-item product-item-no-agl">
+                        <div class="product-item-bl product-item-bl-bor">
+                            <div class="product-item-img" style="height: 365px;">
+                                <img src="./public/images/news-img-1.jpg" alt="team-img" class="img-fluid"
+                                    style="object-fit: cover;">
+                                <span>18/02/2020</span>
+                            </div>
+                            <a href="#" class="product-item-heading">Benefits Of Async/Await</a>
+                            <p class="product-item-desc">Whenever I’m TA for a introductory CSS class where students
+                                learn [...]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-md content-product-btn">See All Services<i
+                    class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-info-item">
+                            <a class="header_logo" href="#">
+                                <img src="./public/images/logo-white.png" alt="cropped-logo" class="img-fluid">
+                            </a>
+
+                            <p class="footer-info-desc">Our company has been developing high-quality and reliable
+                                software for corporate needs since
+                                2008. We are renowned professionals of software development.</p>
+                            <ul class="header_nav-info-list footer-info-item-list d-flex list-unstyled">
+                                <li>
+                                    <a class="header-link-icon" href="https://www.facebook.com">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.instagram.com">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://www.linkedin.com">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="header-link-icon" href="https://twitter.com">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-info-item">
+                            <h5 class="footer-info-item-title">Menu 1</h5>
+                            <ul class="footer-info-list">
+                                <li class="footer-info-list-item">
+                                    <a href="#">About us</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Services</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-info-item">
+                            <h5 class="footer-info-item-title">Menu 2</h5>
+                            <ul class="footer-info-list">
+                                <li class="footer-info-list-item">
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Coming soon</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Brands</a>
+                                </li>
+                                <li class="footer-info-list-item">
+                                    <a href="#">Grid Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="footer-info-item">
+                            <h5 class="footer-info-item-title">Our contacts</h5>
+                            <ul class="header_nav-info-list d-flex list-unstyled">
+                                <li>
+                                    <a class="footer-info-item-link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="footer-info-item-no-line">301 S Irving Blvd Los Angeles, CA
+                                            90020</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-info-item-link" href="tel:18887771234">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <span>+1-888-777-1234</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-info-item-link" href="mailto:mail@example.com">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>mail@example.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-copyright-item">
+                            <ul class="footer-copyright-list">
+                                <li>
+                                    <a href="#">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-copyright-item">
+                            <ul class="footer-copyright-list">
+                                <li>
+                                    Development of Koval Web template
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="footer-copyright-item">
+                            <ul class="footer-copyright-list">
+                                <li>
+                                    &copy; 2020 PathSoft. All rights reserved.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top-header" class="footer-arrow">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+    <!-- Modal call back -->
+    <div class="modal fade" id="modalCallBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">We will call you</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" required id="your-name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" required id="your-phone" placeholder="Your Phone">
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                aria-label="Checkbox for following text input">
+                            &nbsp; Lorem ipsum, or lipsum as it is sometimes known.
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/scripts.js"></script>
+</body>
+
+</html>
